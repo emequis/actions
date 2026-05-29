@@ -1,0 +1,14 @@
+name: 02 - Evento issue 
+on:
+  issues:
+    types: [opened]
+  push:
+    branches:
+      - main
+
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Issue opened or push to main
+        run: echo "¡Hola issue opened!"
